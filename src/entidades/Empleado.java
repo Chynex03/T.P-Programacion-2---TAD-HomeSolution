@@ -53,5 +53,8 @@ public class Empleado {
 
 	public void setCantRetrasos(int cantRetrasos) {
 		this.cantRetrasos = cantRetrasos;
-	}	
+	}
+	public void liberar() {
+	    this.estaDisponible = true;
+	}
 }

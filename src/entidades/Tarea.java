@@ -11,7 +11,6 @@ public class Tarea {
 	private double diasDeRetraso;
 	private boolean tareaTerminada;
 	private double costoTarea;
-	private double bonificacion;
 	private List<Empleado> historialEmpleados;
 
 	public Tarea(String titulo, String descripcion, double duracionDias) {
@@ -23,7 +22,6 @@ public class Tarea {
 		this.diasDeRetraso = 0.0;
 		this.tareaTerminada = false;
 		this.costoTarea = 0.0;
-		this.bonificacion = 0.0;
 		this.historialEmpleados = new ArrayList<>();
 	}
 
@@ -110,7 +108,7 @@ public class Tarea {
 		return diasDeRetraso;
 	}
 
-	public void setDiasDeRetraso(int diasDeRetraso) {
+	public void setDiasDeRetraso(double diasDeRetraso) {
 		this.diasDeRetraso = diasDeRetraso;
 	}
 
@@ -128,14 +126,6 @@ public class Tarea {
 
 	public void setCostoTarea(double costoTarea) {
 		this.costoTarea = costoTarea;
-	}
-
-	public double getBonificacion() {
-		return bonificacion;
-	}
-
-	public void setBonificacion(double bonificacion) {
-		this.bonificacion = bonificacion;
 	}
 
 	public List<Empleado> getHistorialEmpleados() {

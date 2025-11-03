@@ -17,7 +17,7 @@ public class EmpleadoPlanta extends Empleado {
 	}
 	
 	public double calcularAdicional(double costoTarea) {
-		return costoTarea * 0.0;
+		return costoTarea * 0.02;
 	}
 	
 	public double getValorDia() {
